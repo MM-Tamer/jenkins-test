@@ -5,9 +5,9 @@ pipeline {
         stage('Run Bash Command') {
             steps {
                 script {
-                    sh 'echo debugging'
+                    sh 'docker compose ps'
 
-		    sh 'docker-compose -f docker-compose.yml up'
+		    sh 'docker compose -d up'
                 }
             }
         }
