@@ -7,9 +7,9 @@ pipeline {
                 script {
                     sh 'echo debugging'
                     sh 'pwd'
-                    sh 'cd /home/mtamer/DEPI/Docker/docker-compose'
+                    sh 'cd /home/mtamer/DEPI/Docker/docker-compose/'
 
-		    sh 'docker-compose -f docker-compose.yml up -d'
+		    sh 'docker compose -f docker-compose.yml up -d'
                 }
             }
         }
