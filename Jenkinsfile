@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     sh 'echo debugging'
-                    sh 'pwd'
+                    sh 'systemctl status docker'
 
 		    sh 'docker-compose -f docker-compose.yml up'
                 }
