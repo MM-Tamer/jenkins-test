@@ -8,7 +8,7 @@ pipeline {
                     sh 'echo debugging'
                     sh 'whoami'
                     sh 'ls'
-		    sh 'docker-compose -f ${DOCKER_COMPOSE_FILE} up -d'
+		    sh 'docker-compose -f docker-compose.yml up -d'
                 }
             }
         }
