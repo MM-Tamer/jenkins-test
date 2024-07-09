@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     sh 'echo debugging'
-                    sh 'whoami'
+                    sh 'pwd'
                     sh 'ls'
 		    sh 'docker-compose -f docker-compose.yml up -d'
                 }
