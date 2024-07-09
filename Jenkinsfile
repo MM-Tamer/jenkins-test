@@ -5,7 +5,9 @@ pipeline {
         stage('Run Bash Command') {
             steps {
                 script {
-                    sh 'docker-compose up'
+                    sh 'echo debugging'
+                    sh 'whoami'
+                    sh 'docker-compose -d up'
                 }
             }
         }
