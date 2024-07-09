@@ -7,7 +7,8 @@ pipeline {
                 script {
                     sh 'echo debugging'
                     sh 'whoami'
-                    sh 'docker-compose -d up'
+                    sh 'ls'
+		    sh 'docker-compose -f ${DOCKER_COMPOSE_FILE} up -d'
                 }
             }
         }
